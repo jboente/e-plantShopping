@@ -270,7 +270,7 @@ function ProductList() {
         <div>
             <div className="navbar" style={styleObj}>
             <div className="tag">
-               <div className="luxury">
+               <div className="luxury ul">
                <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
                <a href="/" style={{textDecoration:'none'}}>
                     <div>
@@ -289,7 +289,7 @@ function ProductList() {
         { !showCart? (
         <div className="product-grid">
                 {plantsArray.map((category, index) => (
-                <div key={index}>
+                <div key={index} className='product-grid'>
                     <h1 className='plant_heading'>{category.category}</h1>
                     <ul className='product-list'>
                         {category.plants.map((plant, plantIndex) => 
